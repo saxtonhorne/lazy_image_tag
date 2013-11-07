@@ -16,14 +16,23 @@ Add to app/assets/javascripts/application.js:
 
 	//=require jquery.lazy_image_tag
 
+Also be sure to include jQuery in your app.
 
 ## Usage
 
 Within your app use the view helper method:
 		
-	lazy_image_tag
+	lazy_image_tag(source, options={})
 
 It accepts the same parameters as the Rails built-in image_tag method.
+
+## Configuration
+
+You can configure the placeholder and preload threshold 
+
+## Dependencies
+
+The gem includes the [unveil.js jQuery plugin](https://github.com/luis-almeida/unveil/) by [Luis Almeida](https://github.com/luis-almeida/). 
 
 ## Contributing
 

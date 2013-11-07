@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["yellowjacox@gmail.com"]
   spec.description   = %q{ Adds a lazy_image_tag helper method to easily lazy load your site's images }
   spec.summary       = %q{ Lazy load image view helper }
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/saxtonhorne/lazy_image_tag"
   spec.license       = "MIT"
 
   spec.files = Dir["{lib,vendor}/**/*"]
