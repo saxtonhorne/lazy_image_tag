@@ -6,22 +6,22 @@ Adds a lazy_image_tag helper method to easily lazy load your site's images
 
 Add this line to your application's Gemfile:
 
-    gem 'lazy_image_tag', git: 'https://github.com/saxtonhorne/lazy_image_tag.git'
+	gem 'lazy_image_tag', git: 'https://github.com/saxtonhorne/lazy_image_tag.git'
 
 And then execute:
 
-    $ bundle
+	$ bundle
 
 Add to app/assets/javascripts/application.js:
 
-		//=require jquery.lazy_image_tag
+	//=require jquery.lazy_image_tag
 
 
 ## Usage
 
 Within your app use the view helper method:
 		
-		lazy_image_tag
+	lazy_image_tag
 
 It accepts the same parameters as the Rails built-in image_tag method.
 
