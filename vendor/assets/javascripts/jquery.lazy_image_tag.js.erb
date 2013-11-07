@@ -2,5 +2,5 @@
 
 // initialize and run unveil
 $(document).ready(function() {
-  $('img.lazy').unveil(<%= LazyImageTag.configuration.threshold %>);
+  $('img.<%= LazyImageTag.configuration.css_class %>').unveil(<%= LazyImageTag.configuration.threshold %>);
 });
