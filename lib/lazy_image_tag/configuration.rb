@@ -1,10 +1,11 @@
 module LazyImageTag
 	class Configuration
-		attr_accessor :placeholder, :preload_threshold
+		attr_accessor :placeholder, :threshold, :css_class
 
 		def initialize
 			@placeholder = 'placeholder.png'
-			@preload_threshold = 500
+			@threshold = 500
+			@css_class = 'lazy'
 		end
 	end
 end
