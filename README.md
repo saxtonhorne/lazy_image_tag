@@ -28,7 +28,14 @@ It accepts the same parameters as the Rails built-in image_tag method.
 
 ## Configuration
 
-You can configure the placeholder and preload threshold 
+You can configure the placeholder and preload threshold. By default the gem has a, 1x1 px transparent png placeholder, a 500px [preload threshold](https://github.com/luis-almeida/unveil#threshold) and applies the lazy loading to an img tag with a class of 'lazy'.
+
+	# /config/initializers/lazy_image_tag.rb
+	LazyImageTag.configure do |config|
+		config.placeholder = '/path/to/new/placeholder.gif'
+		config.threshold = 600
+		config.css_class = 'new-lazy-class'
+	end
 
 ## Dependencies
 
